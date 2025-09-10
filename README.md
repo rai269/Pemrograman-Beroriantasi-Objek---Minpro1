@@ -3,7 +3,7 @@
 Nama: Rehan Fariz
 NIM: 2409116083
 
-📌 Deskripsi Program
+## Deskripsi Program
 Program ini merupakan simulasi sistem manajemen tiket penerbangan sederhana berbasis Java. Fungsionalitas utama meliputi:
 - Menampilkan daftar tiket
 
@@ -18,7 +18,7 @@ Program ini merupakan simulasi sistem manajemen tiket penerbangan sederhana berb
 
 Program menggunakan pendekatan berbasis objek dan struktur modular agar mudah dikembangkan dan dipahami.
 
-📦 Struktur Class dan Fungsinya
+## Struktur Class dan Fungsinya
 Program ini hanya menggunakan satu class utama yaitu , namun di dalamnya terdapat beberapa method modular yang berfungsi sebagai controller dan UI interaktif.
 1. 
 Class utama yang berisi method  dan seluruh logika program.
