@@ -71,6 +71,16 @@ Method ini menampilkan menu pilihan untuk user dan melakukan input agar user, di
 
 5. Keluar
 
+Jika User memilih 1, maka user dapat melihat daftar tiket yang ada.
+
+Jika User memilih 2, maka user dapat menambah tiket sesuai dengan variable input.
+
+Jika user memilih 3, maka user dapat mengupdate (Edit) tiket yang sudah tersedia.
+
+Jika user memilih 4, maka user dapat menghapus tiket yang sudah tersedia.
+
+Jika user memilih 5, maka user dapat keluar dari program (menghentikan program)
+
 
 
 #### d. lihatTiket()
@@ -125,19 +135,119 @@ Jika kosong sistem akan memberi tahu bahwa tiket belum tersedia.
     } 
 
 
-Mengedit tiket yang sudah ada berdasarkan nomor indeks.
-
-f. tambahTiket()
-Menghapus tiket dari daftar berdasarkan nomor indeks.
-
-g. 
-Mengisi daftar tiket dengan data awal untuk simulasi.
+Method ini memungkinkan user menambahkan tiket baru dengan memasukkan kode penerbangan, maskapai, tujuan, terminal, dan armada.
 
 
-🧪 Simulasi Data Awal
-Berikut adalah data tiket yang diinisialisasi saat program dijalankan:
-1. 	JT123  Garuda Indonesia  Balikpapan - Jakarta  Terminal: T3  Armada: Boeing 737
-2. 	JT456  Lion Air  Balikpapan - Surabaya  Terminal: T1  Armada: Airbus A320
-3. 	JT789  Citilink  Balikpapan - Bali  Terminal: T2  Armada: ATR 72
-4. 	JT012  AirAsia  Balikpapan - Yogyakarta  Terminal: T1  Armada: Airbus A320neo
-5. 	JT345  Super Air Jet  Balikpapan - Medan  Terminal: T3  Armada: Boeing 737-800
+
+#### f. editTiket()
+    public static void editTiket() {
+    System.out.println("========= EDIT TIKET ==========");
+
+    if (daftarTiket.isEmpty()) {
+        System.out.println("Tiket Tidak Tersedia!");
+        System.out.println("Tekan Enter untuk kembali...");
+        objekScanner.nextLine();
+        return;
+    }
+
+    for (int i = 0; i < daftarTiket.size(); i++) {
+        System.out.println((i + 1) + ". " + daftarTiket.get(i));
+    }
+
+    System.out.println("Pilih tiket yang ingin diedit: ");
+    int nomor = objekScanner.nextInt();
+    objekScanner.nextLine();
+
+    if (nomor < 1 || nomor > daftarTiket.size()) {
+        System.out.println("Nomor tiket tidak valid");
+        System.out.println("Tekan Enter untuk kembali...");
+        objekScanner.nextLine();
+        return;
+    }
+
+    System.out.print("Kode Penerbangan Baru: ");
+    String kodeBaru = objekScanner.nextLine();
+
+    System.out.print("Maskapai Baru: ");
+    String maskapaiBaru = objekScanner.nextLine();
+
+    System.out.print("Tujuan Baru: ");
+    String tujuanBaru = objekScanner.nextLine();
+
+    System.out.print("Terminal Baru: ");
+    String terminalBaru = objekScanner.nextLine();
+
+    System.out.print("Armada Baru: ");
+    String armadaBaru = objekScanner.nextLine();
+
+    String tiketBaru = kodeBaru + " | " + maskapaiBaru + " | " + tujuanBaru +
+                   " | " + terminalBaru + " | " + armadaBaru;
+
+    daftarTiket.set(nomor - 1, tiketBaru);
+
+    System.out.println("Tiket berhasil diupdate.");
+    System.out.println("Tekan Enter untuk kembali...");
+    objekScanner.nextLine();
+    }
+
+Fungsi dari method editTiket() ini adalah user dapat mengedit data tiket yang sudah ada.
+
+User dapat mengganti informasi penerbangan dengan data baru.
+
+
+
+#### g. hapusTiket()
+
+    public static void hapusTiket() {
+    System.out.println("\n========= HAPUS TIKET ==========");
+
+    if (daftarTiket.isEmpty()) {
+        System.out.println("Tiket Tidak Tersedia!");
+        System.out.println("Tekan Enter untuk kembali...");
+        objekScanner.nextLine();
+        return;
+    }
+
+    for (int i = 0; i < daftarTiket.size(); i++) {
+        System.out.println((i + 1) + ". " + daftarTiket.get(i));
+    }
+
+    System.out.print("Pilih nomor tiket yang ingin dihapus: ");
+    int nomor = objekScanner.nextInt();
+    objekScanner.nextLine();
+
+    if (nomor < 1 || nomor > daftarTiket.size()) {
+        System.out.println("Nomor tiket tidak valid");
+        System.out.println("Tekan Enter untuk kembali...");
+        objekScanner.nextLine();
+        return;
+    }
+
+    String tiketDihapus = daftarTiket.remove(nomor - 1);
+    System.out.println("Tiket \"" + tiketDihapus + "\" berhasil dihapus.");
+    System.out.println("Tekan Enter untuk kembali...");
+    objekScanner.nextLine();
+    }
+
+Fungsi dari method hapusTiket() adalah untuk menghapus tiket yang dipilih dari daftar.
+
+User dapat menghapus tiket yang sudah ada di dalam daftar tiket sebelumnya.
+
+
+#### h. Inisialisasi Daftar Tiket
+
+    public static void initDaftarTiket() {
+    daftarTiket.add("JT123 | Garuda Indonesia | Balikpapan - Jakarta | Terminal: T3 | Armada: Boeing 737");
+    daftarTiket.add("JT456 | Lion Air | Balikpapan - Surabaya | Terminal: T1 | Armada: Airbus A320");
+    daftarTiket.add("JT789 | Citilink | Balikpapan - Bali | Terminal: T2 | Armada: ATR 72");
+    daftarTiket.add("JT012 | AirAsia | Balikpapan - Yogyakarta | Terminal: T1 | Armada: Airbus A320neo");
+    daftarTiket.add("JT345 | Super Air Jet | Balikpapan - Medan | Terminal: T3 | Armada: Boeing 737-800");
+    }
+
+Method ini berfungsi untuk menambahkan beberapa data tiket default ke dalam sistem agar user langsung bisa mencoba fitur-fitur program.
+
+Namun, Inisialisasi Daftar Tiket ini tidak mengubah database ketika user menjalankan program, yang artinya seluruh hal yang dilakukan user,
+
+tidak akan mengubah apapun, walau jika user menambah, mengedit, dan menghapus. Perubahan hanya terjadi jika program tersebut masih berjalan.
+
+Namun, jika program tersebut telah berhenti maka seluruh perubahan akan kembali seperti semula.
