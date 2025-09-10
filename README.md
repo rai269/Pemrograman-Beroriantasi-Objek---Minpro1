@@ -36,8 +36,10 @@ ArrayList digunakan untuk menyimpan daftar tiket secara dinamis.
 
 #### b. Inisialisasi Data
 
-`` static Scanner objekScanner = new Scanner(System.in);
-static ArrayList<String> daftarTiket = new ArrayList<>(); ``
+`` static Scanner objekScanner = new Scanner(System.in); ``
+
+
+ ``static ArrayList<String> daftarTiket = new ArrayList<>(); ``
 
 objekScanner → objek untuk membaca input user.
 
