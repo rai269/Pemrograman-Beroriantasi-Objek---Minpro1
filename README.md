@@ -1,6 +1,6 @@
 # Pemrograman-Beroriantasi-Objek
 
-Nama: Rehan Fariz
+Nama: Raihan Fariz N
 
 
 NIM: 2409116083
