@@ -4,7 +4,15 @@ Nama: Rehan Fariz
 NIM: 2409116083
 
 ## Deskripsi Program
-Program ini merupakan simulasi sistem manajemen tiket penerbangan sederhana berbasis Java. Fungsionalitas utama meliputi:
+Program Sistem TiketPlane adalah program untuk mengelola data tiket penerbangan. Program ini dibuat
+
+dengan bahasa pemrograman Java menggunakan konsep Pemrograman Berorientasi Objek (PBO) dan
+
+memanfaatkan ArrayList sebagai tempat penyimpanan data tiket secara dinamis.
+
+Fitur utama program ini adalah:
+
+
 - Menampilkan daftar tiket
 
 - Menambahkan tiket baru
@@ -43,9 +51,9 @@ ArrayList digunakan untuk menyimpan daftar tiket secara dinamis.
     static ArrayList<String> daftarTiket = new ArrayList<>();
     
 
-objekScanner → objek untuk membaca input user.
+objekScanner: objek untuk membaca input user.
 
-daftarTiket → menampung semua data tiket yang tersedia.
+daftarTiket: menampung semua data tiket yang tersedia.
 
 
 
@@ -260,3 +268,42 @@ Namun, Inisialisasi Daftar Tiket ini tidak mengubah database ketika user menjala
 tidak akan mengubah apapun, walau jika user menambah, mengedit, dan menghapus. Perubahan hanya terjadi jika program tersebut masih berjalan.
 
 Namun, jika program tersebut telah berhenti maka seluruh perubahan akan kembali seperti semula.
+
+
+## Penjelasan Alur Program Sederhana
+
+#### 1. Inisialisasi Data
+
+- Saat program dijalankan, sistem langsung menambahkan beberapa data tiket default ke dalam daftar tiket.
+
+- Hal ini agar user bisa langsung mencoba fitur tanpa harus menambahkan data terlebih dahulu.
+
+#### 2. Menu Utama
+
+Program menampilkan menu pilihan:
+
+1. Lihat Daftar Tiket
+
+2. Tambah Tiket Baru
+
+3. Edit Tiket
+
+4. Hapus Tiket
+
+5. Keluar
+
+Alur Interaksi User
+
+Jika memilih 1 (Lihat Tiket) maka program akan menampilkan daftar tiket yang ada. Jika kosong, sistem akan memberi tahu bahwa tiket belum tersedia.
+
+Jika memilih 2 (Tambah Tiket) maka user akan diminta memasukkan detail penerbangan (kode, maskapai, tujuan, terminal, armada). Data tiket baru akan tersimpan ke dalam ArrayList.
+
+Jika memilih 3 (Edit Tiket) maka user akan melihat daftar tiket, memilih nomor tiket yang ingin diubah, lalu memasukkan data baru. Data lama akan diganti dengan data baru.
+
+Jika memilih 4 (Hapus Tiket) maka user akan memilih tiket berdasarkan nomor urut, lalu sistem akan menghapus tiket tersebut dari daftar.
+
+Jika memilih 5 (Keluar) maka program akan berhenti.
+
+#### 3. Validasi Input
+
+Jika user memasukkan pilihan yang tidak valid, sistem akan menampilkan pesan error dan kembali ke menu utama.
