@@ -270,17 +270,21 @@ tidak akan mengubah apapun, walau jika user menambah, mengedit, dan menghapus. P
 Namun, jika program tersebut telah berhenti maka seluruh perubahan akan kembali seperti semula.
 
 
-## Penjelasan Alur Program Sederhana
+## Alur Program Sederhana
 
 #### 1. Inisialisasi Data
 
-- Saat program dijalankan, sistem langsung menambahkan beberapa data tiket default ke dalam daftar tiket.
+Saat program dijalankan, sistem langsung menambahkan beberapa data tiket default ke dalam daftar tiket
 
-- Hal ini agar user bisa langsung mencoba fitur tanpa harus menambahkan data terlebih dahulu.
+hal ini agar user bisa langsung mencoba fitur tanpa harus menambahkan data terlebih dahulu
+
+Jadi singkatnya adalah, ketika program dijalankan, maka user dapat langsung melihat daftar tiket
+
+yang sudah ada di dalam program, user tidak perlu menambah satu per satu.
 
 #### 2. Menu Utama
 
-Program menampilkan menu pilihan:
+Saat program berjalan, maka program akan langsung menampilkan menu pilihan:
 
 1. Lihat Daftar Tiket
 
