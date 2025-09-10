@@ -34,6 +34,7 @@ ArrayList digunakan untuk menyimpan daftar tiket secara dinamis.
 
 
 
+
 #### B. Inisialisasi Data
 
     static Scanner objekScanner = new Scanner(System.in); 
@@ -44,7 +45,8 @@ objekScanner → objek untuk membaca input user.
 
 daftarTiket → menampung semua data tiket yang tersedia.
 
-<br/ >
+
+
 
 #### C. menuUtama()
 
@@ -82,6 +84,7 @@ Jika user memilih 5, maka user dapat keluar dari program (menghentikan program)
 
 
 
+
 #### D. lihatTiket()
 
     public static void lihatTiket() {
@@ -100,6 +103,7 @@ Jika user memilih 5, maka user dapat keluar dari program (menghentikan program)
 Fungsi dari method lihatTiket() adalah untuk menampilkan semua tiket yang sudah ada di dalam sistem.
 
 Jika kosong sistem akan memberi tahu bahwa tiket belum tersedia.
+
 
 
 
@@ -135,6 +139,7 @@ Jika kosong sistem akan memberi tahu bahwa tiket belum tersedia.
 
 
 Method ini memungkinkan user menambahkan tiket baru dengan memasukkan kode penerbangan, maskapai, tujuan, terminal, dan armada.
+
 
 
 
@@ -195,6 +200,7 @@ User dapat mengganti informasi penerbangan dengan data baru.
 
 
 
+
 #### G. hapusTiket()
 
     public static void hapusTiket() {
@@ -231,6 +237,8 @@ User dapat mengganti informasi penerbangan dengan data baru.
 Fungsi dari method hapusTiket() adalah untuk menghapus tiket yang dipilih dari daftar.
 
 User dapat menghapus tiket yang sudah ada di dalam daftar tiket sebelumnya.
+
+
 
 
 #### H. Inisialisasi Daftar Tiket
