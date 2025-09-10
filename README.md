@@ -24,7 +24,7 @@ Program ini hanya menggunakan satu class utama yaitu , namun di dalamnya terdapa
 Class utama yang berisi method  dan seluruh logika program.
 
 
-#### a. Import Package
+#### A. Import Package
 
 `` package com.mycompany.main; ``
 
@@ -34,7 +34,7 @@ ArrayList digunakan untuk menyimpan daftar tiket secara dinamis.
 
 
 
-#### b. Inisialisasi Data
+#### B. Inisialisasi Data
 
 `` static Scanner objekScanner = new Scanner(System.in); ``
 
@@ -47,7 +47,7 @@ daftarTiket → menampung semua data tiket yang tersedia.
 
 
 
-#### c. menuUtama()
+#### C. menuUtama()
 
     public static void menuUtama() {
     System.out.println("\n======= SELAMAT DATANG DI SISTEM TIKETPLANE ========");
@@ -83,7 +83,7 @@ Jika user memilih 5, maka user dapat keluar dari program (menghentikan program)
 
 
 
-#### d. lihatTiket()
+#### D. lihatTiket()
 
     public static void lihatTiket() {
     System.out.println("\n=== DAFTAR TIKET ===");
@@ -104,7 +104,7 @@ Jika kosong sistem akan memberi tahu bahwa tiket belum tersedia.
 
 
 
-#### e. tambahTiket()
+#### E. tambahTiket()
 
     public static void tambahTiket() {
     System.out.println("\n=== TAMBAH TIKET ===");
@@ -139,7 +139,7 @@ Method ini memungkinkan user menambahkan tiket baru dengan memasukkan kode pener
 
 
 
-#### f. editTiket()
+#### F. editTiket()
     public static void editTiket() {
     System.out.println("========= EDIT TIKET ==========");
 
@@ -196,7 +196,7 @@ User dapat mengganti informasi penerbangan dengan data baru.
 
 
 
-#### g. hapusTiket()
+#### G. hapusTiket()
 
     public static void hapusTiket() {
     System.out.println("\n========= HAPUS TIKET ==========");
@@ -234,7 +234,7 @@ Fungsi dari method hapusTiket() adalah untuk menghapus tiket yang dipilih dari d
 User dapat menghapus tiket yang sudah ada di dalam daftar tiket sebelumnya.
 
 
-#### h. Inisialisasi Daftar Tiket
+#### H. Inisialisasi Daftar Tiket
 
     public static void initDaftarTiket() {
     daftarTiket.add("JT123 | Garuda Indonesia | Balikpapan - Jakarta | Terminal: T3 | Armada: Boeing 737");
