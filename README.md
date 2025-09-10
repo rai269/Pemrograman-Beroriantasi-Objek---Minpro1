@@ -26,7 +26,9 @@ Class utama yang berisi method  dan seluruh logika program.
 
 #### A. Import Package
 
-`` package com.mycompany.main; ``
+    import java.util.Scanner;
+    import java.util.ArrayList;
+
 
 Scanner digunakan untuk mengambil input dari user.
 
