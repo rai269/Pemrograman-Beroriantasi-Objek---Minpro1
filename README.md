@@ -5,11 +5,17 @@ NIM: 2409116083
 
 📌 Deskripsi Program
 Program ini merupakan simulasi sistem manajemen tiket penerbangan sederhana berbasis Java. Fungsionalitas utama meliputi:
-• 	Menampilkan daftar tiket
-• 	Menambahkan tiket baru
-• 	Mengedit tiket yang sudah ada
-• 	Menghapus tiket
-• 	Keluar dari program
+- Menampilkan daftar tiket
+
+- Menambahkan tiket baru
+
+- Mengedit tiket yang sudah ada
+
+- Menghapus tiket
+
+- Keluar dari program
+
+
 Program menggunakan pendekatan berbasis objek dan struktur modular agar mudah dikembangkan dan dipahami.
 
 📦 Struktur Class dan Fungsinya
